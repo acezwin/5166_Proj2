@@ -1,0 +1,43 @@
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <form action = '/events' method = 'POST'>
+        <table>
+            <tr>
+                <td><label for="category">Category</label></td>
+                <td><input type="text" id="category" name="category" class = "fixed-width" placeholder="Inperson / Virtual / Other"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Event Name</label></td>
+                <td><input type="text" id="name" name="name" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="where">Where</label></td>
+                <td><input type="text" id="where" name="where" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="startdate">Start Date</label></td>
+                <td><input type="date" id="startdate" name="startdate" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="enddate">End Date</label></td>
+                <td><input type="date" id="enddate" name="enddate" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="starttime">Start Time</label></td>
+                <td><input type="time" id="starttime" name="starttime" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="url">Image URL</label></td>
+                <td><input type="url" id="url" name="url" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td class = "align-top"><label for="details">Details</label></td>
+                <td><textarea rows="5" id="details" name="details" class = "fixed-width"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class = "align-right"><button>Submit</button></td>
+            </tr>
+        </table>      
+    </form>
+    </div>
+<%- include('../partials/footer.ejs')%>

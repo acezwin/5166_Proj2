@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <h4><%= event.name%></h4>  
+    <div class="eventImage">
+        <img src="<%= event.url%>" heights="150" width="200">
+    </div>
+   <div id = "event"><%= event.details%></div>
+   <div id = "event">Start Date: <%= event.startdate%></div>
+   <div id = "event">End Date: <%= event.enddate%></div>
+   <div id = "event">Time: <%= event.starttime%></div>
+    
+   <form>
+       <button type = "submit" formmethod="GET" formaction="/events/<%= event.id%>/edit"> Edit </button>
+       <button type = "submit" formmethod="POST" formaction="/events/<%= event.id%>?_method=DELETE"> Delete </button>
+   </form>
+   </div>
+<%- include('../partials/footer.ejs')%>
